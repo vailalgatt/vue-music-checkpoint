@@ -1,18 +1,30 @@
 <template>
-  <div class="home">
+  <div class="container-fluid">
+    <div class="bg">
+    <h1>My Tunes</h1>
     <!-- YOU WILL PROBABLY END UP WITH SOMETHING LIKE THIS -->
-    <my-tunes class="my-tunes"></my-tunes>
-    <itunes class="itunes"></itunes>
+    <div class="row">
+      <itunes class="col-sm-10"></itunes>
+      <my-tunes class="col-sm-2"></my-tunes>
+    </div>
+    </div>
   </div>
 </template>
 
 <script>
+import MyTunes from './MyTunes'
+import Itunes from './Itunes'
+
 export default {
   name: 'home',
   data () {
     return {
       
     }
+  },
+  components: {
+    MyTunes,
+    Itunes
   }
 }
 </script>
@@ -24,18 +36,25 @@ export default {
 * BOOTSTRAP IS FOR THE WEAK FLEXBOX IS KING
 * -- McCall
 **/
-.my-tunes{
-  display: inline-block;
-  min-height: 500px;
-  min-width: 50%;
-  background: purple;
+
+h1{
+  text-align: center;
+  color: white;
+  font-weight: bolder;
 }
 
 .itunes{
-  display: inline-block;
-  background: pink;
-  min-height: 500px;
-  min-width: 45%;
+  padding: 20px;
+  color: white;
 }
+
+.bg{
+  background-image: url(vue-music-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    }
+
 
 </style>
