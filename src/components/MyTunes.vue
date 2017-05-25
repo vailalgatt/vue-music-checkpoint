@@ -19,8 +19,8 @@
                     <div class="card-action">
                         <button @click="removeTrack(song)">Remove</button>
                         <button @click="promoteTrack(song)">Upvote</button>
-                        <span>{{ song.votes }}</span>
                         <button @click="demoteTrack(song)">Downvote</button>
+                        <span>{{ song.votes }}</span>
                     </div>                               
                     </div>
                 </div>
@@ -30,37 +30,32 @@
 </template>
 
 
+
 <script>
 import mytunes from '../services/mytunes-service'
-
 export default {
-    name: 'my-tunes',
-    data(){
-        return{
-            songs: mytunes.getTracks()
-        }
-    },
-    methods: {
-        removeTrack(song){
-            mytunes.removeTrack(song)
-        },
-        promoteTrack(song){
-            mytunes.promoteTrack(song);
-            this.mytunes = this.mytunes.sort(function (a, b) {
-                return b.votes - a.votes
-            })
-        },
-        demoteTrack(song) {
-            mytunes.demoteTrack(song);
-            this.mytunes = this.mytunes.sort(function (a, b) {
-                return b.votes - a.votes
-            })
-        },
-        addSong(event) {
-            var song = JSON.parse(event.dataTransfer.getData('text/javascript'))
-            myTunesService.addTrack(song);
-        }
+  name: 'mytunes',
+  data(){
+    return {
+      songs: mytunes.getTracks()
+      
     }
+  },
+  computed:{},
+  methods:{
+    removeTrack(song){
+      mytunes.removeTrack(song)
+      
+    },
+   promoteTrack(song) {
+     mytunes.promoteTrack(song)
+    
+    },
+  demoteTrack(song) { 
+    mytunes.demoteTrack(song)
+  }
+  },
+  components:{}
 }
 </script>
 
@@ -71,11 +66,9 @@ h2{
     text-align: center;
     text-decoration: underline white;
 }
-
 button{
     background: #B59AB9;
 }
-
 .well{
     text-align: center;
     color: white;
@@ -83,16 +76,10 @@ button{
     margin: 20px;
     padding: 20px;
 }
-
 .well:hover{
     background: #F9CCFF;
 }
-
 audio{
     width: 100%;
 }
-
-
 </style>
-
-

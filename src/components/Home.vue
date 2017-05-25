@@ -1,6 +1,5 @@
 <template>
   <div class="container-fluid">
-    <div class="bg">
     <h1>My Tunes</h1>
     <!-- YOU WILL PROBABLY END UP WITH SOMETHING LIKE THIS -->
     <div class="row">
@@ -8,7 +7,6 @@
       <my-tunes class="col-sm-2"></my-tunes>
     </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -48,7 +46,7 @@ h1{
   color: white;
 }
 
-.bg{
+.container-fluid{
   background-image: url(vue-music-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;

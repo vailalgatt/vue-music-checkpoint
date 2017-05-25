@@ -65,6 +65,7 @@ form{
 }
 
 button{
+    color: black;
     background: #F9CCFF;
 }
 
@@ -75,6 +76,7 @@ button{
     padding-right: 10px;
     padding-left: 10px;
     margin: 5px;
+    color: white;
 }
 
 
