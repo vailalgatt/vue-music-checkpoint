@@ -58,7 +58,7 @@ export default {
   demoteTrack(track) {
     let index = myTunes.songs.indexOf(track)
     if (myTunes.songs[index].votes > 0) {
-      githubmyTunes.songs[index].votes -= 1
+      myTunes.songs[index].votes -= 1
     }
     this.getTracks()
     saveMytunes()

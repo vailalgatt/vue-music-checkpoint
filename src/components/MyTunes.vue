@@ -1,6 +1,7 @@
 <template>
     <div class="my-tunes">
     <h2>Playlist</h2>
+    
     <div class="row">
             <div class="col-xs-12 text-center" v-for="song in songs">
                 <div class="well">
