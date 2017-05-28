@@ -47,7 +47,7 @@ h1{
 }
 
 .container-fluid{
-  background-image: url(vue-music-bg.jpg);
+  background-image: url(https://static.pexels.com/photos/132838/pexels-photo-132838.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
