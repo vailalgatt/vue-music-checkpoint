@@ -1,6 +1,6 @@
 <template>
     <div class="my-tunes">
-    <h2>Playlist</h2>
+    <h1>Playlist</h1>
     
     <div class="row">
             <div class="col-xs-12 text-center" v-for="song in songs">
@@ -21,7 +21,9 @@
                         <button @click="removeTrack(song)">Remove</button>
                         <button @click="promoteTrack(song)">Upvote</button>
                         <button @click="demoteTrack(song)">Downvote</button>
-                        <span>{{ song.votes }}</span>
+                        <div class="votes">
+                            <span>{{ song.votes }}</span>
+                        </div>
                     </div>                               
                     </div>
                 </div>
@@ -63,24 +65,29 @@ export default {
 
 <style scoped>
 h2{
-    color: white;
+    color: #660066;
     text-align: center;
     text-decoration: underline white;
+    width: 100%;
 }
 button{
-    background: #B59AB9;
+    background: #660066;
 }
 .well{
     text-align: center;
     color: white;
-    background: #F7BDFF;
+    background: #ff66ff;
     margin: 20px;
     padding: 20px;
 }
 .well:hover{
-    background: #F9CCFF;
+    background: #ff7aff;
 }
 audio{
     width: 100%;
+}
+.votes{
+    font-weight: bold;
+    font-size: 30px;
 }
 </style>

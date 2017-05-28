@@ -3,7 +3,7 @@
         <form class="form-inline" @submit.prevent="getMusicByArtist">
             <div class="form-group">
                 <input type="text" class="form-control" v-model="artist" placeholder="Artist Name">
-                <button id="defaultBTN" type="submit">GetMusic</button>                
+              <v-btn primary light class="btn--light-flat-focused" id="defaultBTN" type="submit">Get Music</v-btn>
             </div>
         </form>
         <div class="row">
@@ -63,14 +63,19 @@ form{
     padding: 20px;
     text-align: left;
 }
+h2{
+    color: white;
+    text-align: center;
+}
+
 
 button{
-    color: black;
-    background: #F9CCFF;
+    color: white;
+    background: #c199c1;
 }
 
 #defaultBTN{
-    background: #B59AB9;
+    background: #660066;
     font-size: 18px;
     text-align: center;
     padding-right: 10px;
@@ -83,7 +88,7 @@ button{
 .well{
     text-align: center;
     color: white;
-    background: #B59AB9;
+    background: #660066;
     margin: 10px;
 }
 
@@ -92,6 +97,6 @@ audio{
 }
 
 .well:hover{
-    background: #F9CCFF;
+    background: #800080;
 }
 </style>
