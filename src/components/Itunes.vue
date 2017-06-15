@@ -7,7 +7,7 @@
             </div>
         </form>
         <div class="row">
-            <div class="col-xs-3 text-center" v-for="song in songs">
+            <div class="col-xs-6 text-center" v-for="song in songs">
                 <div class="well">
                     <div class="media">
                         <div class="media-left">
