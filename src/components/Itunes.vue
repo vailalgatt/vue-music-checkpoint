@@ -7,7 +7,7 @@
             </div>
         </form>
         <div class="row">
-            <div class="col-xs-4 text-center" v-for="song in songs">
+            <div class="col-xs-3 text-center" v-for="song in songs">
                 <div class="well">
                     <div class="media">
                         <div class="media-left">
@@ -21,7 +21,7 @@
                     <h5>{{song.collectionCensoredName}}</h5>
                     <h4>${{song.trackPrice}}</h4>
                     <audio controls><source :src="song.previewUrl" type="audio/mpeg"></audio>
-                        <button @click="addTunes(song)">Add to Playlist</button>                              
+                        <button  @click="addTunes(song)">Add to Playlist</button>                              
                     </div>
                 </div>
             </div> 
@@ -71,11 +71,11 @@ h2{
 
 button{
     color: white;
-    background: #c199c1;
+    background: #0066A4;
 }
 
 #defaultBTN{
-    background: #660066;
+    background: #0066A4;
     font-size: 18px;
     text-align: center;
     padding-right: 10px;
@@ -88,7 +88,7 @@ button{
 .well{
     text-align: center;
     color: white;
-    background: #660066;
+    background: #2E2E2E;
     margin: 10px;
 }
 
@@ -97,6 +97,6 @@ audio{
 }
 
 .well:hover{
-    background: #800080;
+    background: #474747;
 }
 </style>

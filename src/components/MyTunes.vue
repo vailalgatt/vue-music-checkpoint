@@ -65,23 +65,22 @@ export default {
 
 <style scoped>
 h2{
-    color: #660066;
+    color: White;
     text-align: center;
-    text-decoration: underline white;
     width: 100%;
 }
 button{
-    background: #660066;
+    background: #474747;
 }
 .well{
     text-align: center;
     color: white;
-    background: #ff66ff;
+    background: #0066A4;
     margin: 20px;
     padding: 20px;
 }
 .well:hover{
-    background: #ff7aff;
+    background: #0080CD;
 }
 audio{
     width: 100%;
