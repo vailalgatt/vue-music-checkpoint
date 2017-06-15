@@ -37,8 +37,9 @@ export default {
 
 h1{
   text-align: center;
-  color: white;
+  color: #0080CD;
   font-weight: bolder;
+  font-size: 50px;
 }
 
 .itunes{
